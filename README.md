@@ -41,7 +41,10 @@ You only need to do this once. If macOS asks whether Mac Clean may access your *
    - **Protected**: found but kept, like projects you worked on recently. These can't be deleted.
 3. Click **ⓘ** on any item for details, or **Show in Finder** to see it.
    To choose where your projects are, click **Choose Folders…** under Project Build Files.
-4. Click **Clean…**, check the summary, and confirm.
+   To never be offered something again, open its details and click **Always Keep** (undo it with **Stop Keeping**).
+4. Click **Clean…**, check the summary, and confirm. Items marked **Review** go to the **Trash**, so you can put them back; everything else is deleted.
+
+Click the clock button at the top to see your **Cleaning History**: everything Mac Clean has cleaned, and how much space it freed.
 
 Quit Xcode and the Simulator before cleaning.
 
@@ -52,6 +55,8 @@ Quit Xcode and the Simulator before cleaning.
 - Anything in a project you edited in the last 30 days (you can change this)
 - Your documents, photos, app data, passwords and settings (for apps, only their caches are removed; sign-ins, history and settings stay)
 - macOS's own caches, and the caches of apps that are open
+- Xcode, simulator and Android files while Xcode, Simulator or Android Studio is open
+- Anything you chose to always keep
 
 Before deleting, Mac Clean checks every item again and skips anything that no longer matches these rules.
 
