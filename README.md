@@ -12,6 +12,8 @@ Works on macOS 12 Monterey or later, on Apple silicon and Intel Macs.
 
 People who use **Xcode, Android Studio, Flutter, Node.js or Python** on their Mac. These tools quietly keep many gigabytes of caches and old files.
 
+It also cleans **Docker** (unused images, build cache and stopped containers; never your volumes), caches for **Go, Rust, Bun, Maven and Conda**, extra **Xcode copies** you don't use, and **system caches** such as the simulators' shared caches (macOS asks for your password for those, and they're never selected for you).
+
 Everyone else can still use it to clear **app caches**: browsers (Chrome, Brave, Edge, Firefox, Arc), editors (VS Code, Cursor), chat and work apps (Slack, Discord, Postman) and any other app that keeps a cache in the standard macOS place. Mac Clean skips the caches of apps that are open, so quit an app first to include it.
 
 ## Install
@@ -55,6 +57,7 @@ Quit Xcode and the Simulator before cleaning.
 - Anything in a project you edited in the last 30 days (you can change this)
 - Your documents, photos, app data, passwords and settings (for apps, only their caches are removed; sign-ins, history and settings stay)
 - macOS's own caches, and the caches of apps that are open
+- Docker volumes, and the Xcode you're using
 - Xcode, simulator and Android files while Xcode, Simulator or Android Studio is open
 - Anything you chose to always keep
 
